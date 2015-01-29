@@ -1,0 +1,12 @@
+Source: ros-hydro-screenrun
+Section: misc
+Priority: extra
+Maintainer: Christian Dornhege <c.dornhege@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-hydro-catkin, ros-hydro-roscpp
+Homepage: http://ros.org/wiki/screenrun
+Standards-Version: 3.9.2
+
+Package: ros-hydro-screenrun
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-roscpp
+Description: screenrun is a small tool that pushes commands into a screen window. Use \015 after a command for ENTER, i.e. executing it.
