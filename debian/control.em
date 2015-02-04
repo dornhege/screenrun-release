@@ -11,4 +11,5 @@ Standards-Version: 3.9.2
 Package: @(Package)
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, @(', '.join(Depends))
+Recommends: byobu
 Description: @(Description)
