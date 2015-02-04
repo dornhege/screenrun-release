@@ -1,0 +1,22 @@
+From 70d831291e41cc17c585e1f4b43b29688f252ed0 Mon Sep 17 00:00:00 2001
+From: Christian Dornhege <c.dornhege@googlemail.com>
+Date: Wed, 4 Feb 2015 15:14:37 +0100
+Subject: [PATCH] screenrun Recommends byobu
+
+---
+ debian/control.em |    1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/debian/control.em b/debian/control.em
+index 175af20..aeaca98 100644
+--- a/debian/control.em
++++ b/debian/control.em
+@@ -11,4 +11,5 @@ Standards-Version: 3.9.2
+ Package: @(Package)
+ Architecture: any
+ Depends: ${shlibs:Depends}, ${misc:Depends}, @(', '.join(Depends))
++Recommends: byobu
+ Description: @(Description)
+-- 
+1.7.9.5
+
